@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD4D8441EC9E9C300625A64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8431EC9E9C300625A64 /* main.m */; };
+		4CD4D8471EC9E9C300625A64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8461EC9E9C300625A64 /* AppDelegate.m */; };
+		4CD4D84F1EC9E9C300625A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4D84E1EC9E9C300625A64 /* Assets.xcassets */; };
+		4CD4D8521EC9E9C300625A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4D8501EC9E9C300625A64 /* LaunchScreen.storyboard */; };
+		4CD4D8651EC9EA4800625A64 /* TYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8641EC9EA4800625A64 /* TYHomeViewController.m */; };
+		4CD4D8671EC9EA6C00625A64 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4D8661EC9EA6C00625A64 /* 1.plist */; };
+		4CD4D86A1EC9EA8400625A64 /* TYShopsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8691EC9EA8400625A64 /* TYShopsModel.m */; };
+		4CD4D86E1EC9EA9600625A64 /* TYShopsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D86C1EC9EA9600625A64 /* TYShopsCell.m */; };
+		4CD4D86F1EC9EA9600625A64 /* TYShopsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4D86D1EC9EA9600625A64 /* TYShopsCell.xib */; };
+		4CD4D8761EC9F00C00625A64 /* TYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8751EC9F00C00625A64 /* TYTabBarViewController.m */; };
+		A3508FC1DA2E31907E085D8F /* libPods-TYTransitionForPushAndPop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E515A170AAFED14D395199 /* libPods-TYTransitionForPushAndPop.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CD4D83F1EC9E9C300625A64 /* TYTransitionForPushAndPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYTransitionForPushAndPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD4D8431EC9E9C300625A64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CD4D8451EC9E9C300625A64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CD4D8461EC9E9C300625A64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CD4D84E1EC9E9C300625A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CD4D8511EC9E9C300625A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CD4D8531EC9E9C300625A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD4D8631EC9EA4800625A64 /* TYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYHomeViewController.h; sourceTree = "<group>"; };
+		4CD4D8641EC9EA4800625A64 /* TYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYHomeViewController.m; sourceTree = "<group>"; };
+		4CD4D8661EC9EA6C00625A64 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		4CD4D8681EC9EA8400625A64 /* TYShopsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShopsModel.h; sourceTree = "<group>"; };
+		4CD4D8691EC9EA8400625A64 /* TYShopsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShopsModel.m; sourceTree = "<group>"; };
+		4CD4D86B1EC9EA9600625A64 /* TYShopsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShopsCell.h; sourceTree = "<group>"; };
+		4CD4D86C1EC9EA9600625A64 /* TYShopsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShopsCell.m; sourceTree = "<group>"; };
+		4CD4D86D1EC9EA9600625A64 /* TYShopsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYShopsCell.xib; sourceTree = "<group>"; };
+		4CD4D8741EC9F00C00625A64 /* TYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabBarViewController.h; sourceTree = "<group>"; };
+		4CD4D8751EC9F00C00625A64 /* TYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabBarViewController.m; sourceTree = "<group>"; };
+		5BACB3194C3EC0C0BD30C5E8 /* Pods-TYTransitionForPushAndPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYTransitionForPushAndPop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYTransitionForPushAndPop/Pods-TYTransitionForPushAndPop.release.xcconfig"; sourceTree = "<group>"; };
+		9E875C0402C954111697F9EE /* Pods-TYTransitionForPushAndPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYTransitionForPushAndPop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYTransitionForPushAndPop/Pods-TYTransitionForPushAndPop.debug.xcconfig"; sourceTree = "<group>"; };
+		F8E515A170AAFED14D395199 /* libPods-TYTransitionForPushAndPop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYTransitionForPushAndPop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CD4D83C1EC9E9C300625A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3508FC1DA2E31907E085D8F /* libPods-TYTransitionForPushAndPop.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B580CF89628B5D3816BE5C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E875C0402C954111697F9EE /* Pods-TYTransitionForPushAndPop.debug.xcconfig */,
+				5BACB3194C3EC0C0BD30C5E8 /* Pods-TYTransitionForPushAndPop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CD4D8361EC9E9C300625A64 = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8411EC9E9C300625A64 /* TYTransitionForPushAndPop */,
+				4CD4D8401EC9E9C300625A64 /* Products */,
+				4B580CF89628B5D3816BE5C0 /* Pods */,
+				8CE47D7E2BEEE0A01C0BE621 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4CD4D8401EC9E9C300625A64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D83F1EC9E9C300625A64 /* TYTransitionForPushAndPop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CD4D8411EC9E9C300625A64 /* TYTransitionForPushAndPop */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8591EC9EA0E00625A64 /* Classes */,
+				4CD4D8451EC9E9C300625A64 /* AppDelegate.h */,
+				4CD4D8461EC9E9C300625A64 /* AppDelegate.m */,
+				4CD4D84E1EC9E9C300625A64 /* Assets.xcassets */,
+				4CD4D8501EC9E9C300625A64 /* LaunchScreen.storyboard */,
+				4CD4D8531EC9E9C300625A64 /* Info.plist */,
+				4CD4D8661EC9EA6C00625A64 /* 1.plist */,
+				4CD4D8421EC9E9C300625A64 /* Supporting Files */,
+			);
+			path = TYTransitionForPushAndPop;
+			sourceTree = "<group>";
+		};
+		4CD4D8421EC9E9C300625A64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8431EC9E9C300625A64 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CD4D8591EC9EA0E00625A64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8701EC9EFFA00625A64 /* Main */,
+				4CD4D85A1EC9EA0E00625A64 /* Animate */,
+				4CD4D85F1EC9EA0E00625A64 /* Home */,
+				4CD4D85B1EC9EA0E00625A64 /* Detail */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CD4D85A1EC9EA0E00625A64 /* Animate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animate;
+			sourceTree = "<group>";
+		};
+		4CD4D85B1EC9EA0E00625A64 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D85C1EC9EA0E00625A64 /* Controller */,
+				4CD4D85D1EC9EA0E00625A64 /* Model */,
+				4CD4D85E1EC9EA0E00625A64 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4CD4D85C1EC9EA0E00625A64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CD4D85D1EC9EA0E00625A64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CD4D85E1EC9EA0E00625A64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CD4D85F1EC9EA0E00625A64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8601EC9EA0E00625A64 /* Controller */,
+				4CD4D8611EC9EA0E00625A64 /* Model */,
+				4CD4D8621EC9EA0E00625A64 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4CD4D8601EC9EA0E00625A64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8631EC9EA4800625A64 /* TYHomeViewController.h */,
+				4CD4D8641EC9EA4800625A64 /* TYHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CD4D8611EC9EA0E00625A64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8681EC9EA8400625A64 /* TYShopsModel.h */,
+				4CD4D8691EC9EA8400625A64 /* TYShopsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CD4D8621EC9EA0E00625A64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D86B1EC9EA9600625A64 /* TYShopsCell.h */,
+				4CD4D86C1EC9EA9600625A64 /* TYShopsCell.m */,
+				4CD4D86D1EC9EA9600625A64 /* TYShopsCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CD4D8701EC9EFFA00625A64 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8711EC9EFFA00625A64 /* Controller */,
+				4CD4D8721EC9EFFA00625A64 /* Model */,
+				4CD4D8731EC9EFFA00625A64 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4CD4D8711EC9EFFA00625A64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CD4D8741EC9F00C00625A64 /* TYTabBarViewController.h */,
+				4CD4D8751EC9F00C00625A64 /* TYTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4CD4D8721EC9EFFA00625A64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CD4D8731EC9EFFA00625A64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CE47D7E2BEEE0A01C0BE621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E515A170AAFED14D395199 /* libPods-TYTransitionForPushAndPop.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CD4D83E1EC9E9C300625A64 /* TYTransitionForPushAndPop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD4D8561EC9E9C300625A64 /* Build configuration list for PBXNativeTarget "TYTransitionForPushAndPop" */;
+			buildPhases = (
+				2E71537F60F856B0A6376A80 /* [CP] Check Pods Manifest.lock */,
+				4CD4D83B1EC9E9C300625A64 /* Sources */,
+				4CD4D83C1EC9E9C300625A64 /* Frameworks */,
+				4CD4D83D1EC9E9C300625A64 /* Resources */,
+				69894D2F02D184191A033569 /* [CP] Embed Pods Frameworks */,
+				830FAE16DA3B8C8FFBA82368 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYTransitionForPushAndPop;
+			productName = TYTransitionForPushAndPop;
+			productReference = 4CD4D83F1EC9E9C300625A64 /* TYTransitionForPushAndPop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CD4D8371EC9E9C300625A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MTY;
+				TargetAttributes = {
+					4CD4D83E1EC9E9C300625A64 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = FGL7E5MTW2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4CD4D83A1EC9E9C300625A64 /* Build configuration list for PBXProject "TYTransitionForPushAndPop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CD4D8361EC9E9C300625A64;
+			productRefGroup = 4CD4D8401EC9E9C300625A64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CD4D83E1EC9E9C300625A64 /* TYTransitionForPushAndPop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CD4D83D1EC9E9C300625A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD4D8671EC9EA6C00625A64 /* 1.plist in Resources */,
+				4CD4D8521EC9E9C300625A64 /* LaunchScreen.storyboard in Resources */,
+				4CD4D86F1EC9EA9600625A64 /* TYShopsCell.xib in Resources */,
+				4CD4D84F1EC9E9C300625A64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E71537F60F856B0A6376A80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69894D2F02D184191A033569 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYTransitionForPushAndPop/Pods-TYTransitionForPushAndPop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		830FAE16DA3B8C8FFBA82368 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYTransitionForPushAndPop/Pods-TYTransitionForPushAndPop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CD4D83B1EC9E9C300625A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD4D86A1EC9EA8400625A64 /* TYShopsModel.m in Sources */,
+				4CD4D8471EC9E9C300625A64 /* AppDelegate.m in Sources */,
+				4CD4D8651EC9EA4800625A64 /* TYHomeViewController.m in Sources */,
+				4CD4D8761EC9F00C00625A64 /* TYTabBarViewController.m in Sources */,
+				4CD4D86E1EC9EA9600625A64 /* TYShopsCell.m in Sources */,
+				4CD4D8441EC9E9C300625A64 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CD4D8501EC9E9C300625A64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD4D8511EC9E9C300625A64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CD4D8541EC9E9C300625A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CD4D8551EC9E9C300625A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CD4D8571EC9E9C300625A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E875C0402C954111697F9EE /* Pods-TYTransitionForPushAndPop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FGL7E5MTW2;
+				INFOPLIST_FILE = TYTransitionForPushAndPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Matyit.TYTransitionForPushAndPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4CD4D8581EC9E9C300625A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BACB3194C3EC0C0BD30C5E8 /* Pods-TYTransitionForPushAndPop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FGL7E5MTW2;
+				INFOPLIST_FILE = TYTransitionForPushAndPop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Matyit.TYTransitionForPushAndPop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CD4D83A1EC9E9C300625A64 /* Build configuration list for PBXProject "TYTransitionForPushAndPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD4D8541EC9E9C300625A64 /* Debug */,
+				4CD4D8551EC9E9C300625A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD4D8561EC9E9C300625A64 /* Build configuration list for PBXNativeTarget "TYTransitionForPushAndPop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD4D8571EC9E9C300625A64 /* Debug */,
+				4CD4D8581EC9E9C300625A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CD4D8371EC9E9C300625A64 /* Project object */;
+}
