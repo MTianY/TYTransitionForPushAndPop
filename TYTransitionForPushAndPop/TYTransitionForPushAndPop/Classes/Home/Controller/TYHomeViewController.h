@@ -25,4 +25,6 @@
  */
 @property (nonatomic, assign) CGFloat colSpace;
 
+@property (nonatomic, assign) CGRect finalCellRect;
+
 @end

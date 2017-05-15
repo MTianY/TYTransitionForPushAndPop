@@ -8,16 +8,23 @@
 
 #import "TYDetailPhotoViewController.h"
 #import <UIImageView+WebCache.h>
+#import "TYTransitionAnimateForPop.h"
 
-@interface TYDetailPhotoViewController ()
+@interface TYDetailPhotoViewController () <UINavigationControllerDelegate>
 
 @end
 
 @implementation TYDetailPhotoViewController
 
+#pragma mark - view 的生命周期
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.shopImageView sd_setImageWithURL:[NSURL URLWithString:self.img] placeholderImage:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.delegate = self;
 }
 
 #pragma mark - pop
@@ -27,6 +34,19 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark - <UINavigationControllerDelegate>
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC{
+    if ([fromVC isKindOfClass:[TYDetailPhotoViewController class]]) {
+        TYTransitionAnimateForPop *animatePop = [[TYTransitionAnimateForPop alloc] init];
+        return animatePop;
+    }else {
+        return nil;
+    }
+}
 
 
 @end

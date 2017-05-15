@@ -20,6 +20,7 @@
 		4CD4D87A1EC9F9FC00625A64 /* TYDetailPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8781EC9F9FC00625A64 /* TYDetailPhotoViewController.m */; };
 		4CD4D87B1EC9F9FC00625A64 /* TYDetailPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD4D8791EC9F9FC00625A64 /* TYDetailPhotoViewController.xib */; };
 		4CD4D87E1EC9FB0D00625A64 /* TYTransitionAnimateForPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D87D1EC9FB0D00625A64 /* TYTransitionAnimateForPush.m */; };
+		4CD4D8811ECA0A2900625A64 /* TYTransitionAnimateForPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD4D8801ECA0A2900625A64 /* TYTransitionAnimateForPop.m */; };
 		A3508FC1DA2E31907E085D8F /* libPods-TYTransitionForPushAndPop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E515A170AAFED14D395199 /* libPods-TYTransitionForPushAndPop.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		4CD4D8791EC9F9FC00625A64 /* TYDetailPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYDetailPhotoViewController.xib; sourceTree = "<group>"; };
 		4CD4D87C1EC9FB0D00625A64 /* TYTransitionAnimateForPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTransitionAnimateForPush.h; sourceTree = "<group>"; };
 		4CD4D87D1EC9FB0D00625A64 /* TYTransitionAnimateForPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTransitionAnimateForPush.m; sourceTree = "<group>"; };
+		4CD4D87F1ECA0A2900625A64 /* TYTransitionAnimateForPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTransitionAnimateForPop.h; sourceTree = "<group>"; };
+		4CD4D8801ECA0A2900625A64 /* TYTransitionAnimateForPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTransitionAnimateForPop.m; sourceTree = "<group>"; };
 		5BACB3194C3EC0C0BD30C5E8 /* Pods-TYTransitionForPushAndPop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYTransitionForPushAndPop.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYTransitionForPushAndPop/Pods-TYTransitionForPushAndPop.release.xcconfig"; sourceTree = "<group>"; };
 		9E875C0402C954111697F9EE /* Pods-TYTransitionForPushAndPop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYTransitionForPushAndPop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYTransitionForPushAndPop/Pods-TYTransitionForPushAndPop.debug.xcconfig"; sourceTree = "<group>"; };
 		F8E515A170AAFED14D395199 /* libPods-TYTransitionForPushAndPop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYTransitionForPushAndPop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +132,8 @@
 			children = (
 				4CD4D87C1EC9FB0D00625A64 /* TYTransitionAnimateForPush.h */,
 				4CD4D87D1EC9FB0D00625A64 /* TYTransitionAnimateForPush.m */,
+				4CD4D87F1ECA0A2900625A64 /* TYTransitionAnimateForPop.h */,
+				4CD4D8801ECA0A2900625A64 /* TYTransitionAnimateForPop.m */,
 			);
 			path = Animate;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				4CD4D87E1EC9FB0D00625A64 /* TYTransitionAnimateForPush.m in Sources */,
 				4CD4D8441EC9E9C300625A64 /* main.m in Sources */,
 				4CD4D87A1EC9F9FC00625A64 /* TYDetailPhotoViewController.m in Sources */,
+				4CD4D8811ECA0A2900625A64 /* TYTransitionAnimateForPop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

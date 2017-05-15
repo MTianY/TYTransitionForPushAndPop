@@ -7,7 +7,7 @@
 //
 
 /*
- * 自定义 push 动画
+ * 自定义 push 转场动画
  */
 
 #import "TYTransitionAnimateForPush.h"
@@ -37,7 +37,7 @@
     TYShopsCell *cell = (TYShopsCell *)[fromVc_homeVc.collectionView cellForItemAtIndexPath:indexPath];
     // 对图片截图
     UIView *screenShotView = [cell.shopImageView snapshotViewAfterScreenUpdates:NO];
-    screenShotView.frame = [containerView convertRect:cell.shopImageView.frame fromView:cell];
+    screenShotView.frame = fromVc_homeVc.finalCellRect = [containerView convertRect:cell.shopImageView.frame fromView:cell];
     cell.shopImageView.hidden = YES;
     
     /*
