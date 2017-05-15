@@ -9,11 +9,13 @@
 #import "TYHomeViewController.h"
 #import "TYShopsModel.h"
 #import "TYShopsCell.h"
+#import "TYDetailPhotoViewController.h"
+#import "TYTransitionAnimateForPush.h"
 
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@interface TYHomeViewController ()
+@interface TYHomeViewController () <UINavigationControllerDelegate>
 
 @property (nonatomic, strong) NSMutableArray *shopsArrayM;
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
@@ -46,7 +48,6 @@ static NSString * const reuseIdentifier = @"Cell";
         _flowLayout.minimumInteritemSpacing = self.colSpace;
         _flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         CGFloat itemW = (kScreenWidth - (self.colCount + 1) * self.colSpace) / self.colCount;
-//        CGFloat itemW = 200;
         CGFloat itemH = itemW;
         _flowLayout.itemSize = CGSizeMake(itemW, itemH);
     }
@@ -71,13 +72,31 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",self.shopsArrayM);
+//    self.navigationController.delegate = self;
+}
+
+// 要在这里或者 viewDidAppear: 方法中设置代理,代理方法才执行
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - <UINavigationControllerDelegate>
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC{
+    if ([fromVC isKindOfClass:[TYHomeViewController class]]) {
+        TYTransitionAnimateForPush *animatePush = [[TYTransitionAnimateForPush alloc] init];
+        return animatePush;
+    }else {
+        return nil;
+    }
+}
 
 #pragma mark - <UICollectionViewDataSource>
 
@@ -92,6 +111,15 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 #pragma mark - <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    TYDetailPhotoViewController *detailPhotoVc = [[TYDetailPhotoViewController alloc] init];
+    TYShopsCell *cell = (TYShopsCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    detailPhotoVc.img = cell.model.img;
+    self.hidesBottomBarWhenPushed = YES;
+    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController pushViewController:detailPhotoVc animated:YES];
+}
 
 
 @end
